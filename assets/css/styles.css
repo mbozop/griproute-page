@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lexend+Mega:wght@100..900&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.navbar-logo {
+    max-height: 50px; /* Ajusta esta altura según sea necesario */
+    margin-right: 5px; /* Espacio a la derecha de la imagen */
+    vertical-align: left;
+}
+
+.section-title{
+    font-family: "Lexend Mega", sans-serif;
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+    margin: 60px 20px 60px 20px ;
+}
+
+.section-description{
+    font-family: "Questrial", sans-serif;
+    font-size: 1.5em;
+    color: #898A8C;
+    text-align: center;
+    margin: 0px 100px 60px 100px;
+}
+
+.pricing-card {
+    background-color: #2C2A48;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #00D9A5;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    color: #2C2A48;
+}
+
+.plan-title {
+    font-size: 1.5em;
+    font-family: "Lexend Mega", sans-serif;
+    font-weight: bold;
+    margin: 0 10 0 0;
+}
+
+.price {
+    font-family: "lexend mega", sans-serif;
+    font-size: 2.5em;
+    color: #448C74;
+}
+
+.price.currency {
+    font-size: 0.6em;
+    vertical-align: top;
+}
+
+.price .duration {
+    font-size: 0.5em;
+}
+
+.description {
+    font-family: "Questrial", sans-serif;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.features-list {
+    list-style: none;
+    font-family: questrial, sans-serif;
+    border-radius: 10px;
+    padding: 0;
+    margin: 20px;
+}
+
+.features-list li {
+    padding: 10px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px; /* Agrega border-radius aquí */
+}
+
+.features-list li:nth-child(odd) {
+    background-color: #F6F9FC; /* Color para los elementos en posiciones impares */
+}
+
+.features-list li:nth-child(even) {
+    background-color: #ffffff; /* Color para los elementos en posiciones pares */
+}
+
+.features-list li i.info-icon {
+    font-style: normal; /* Esto es solo un marcador de posición, agrega el ícono de tu elección */
+    background-color: #444;
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.copyright {
+    font-family: "Questrial", sans-serif;
+    background: #1c1c1c; /* Ajuste del color de fondo si es necesario */
+    color: #a0a0a0;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.dark-mode .section-title {
+    color: #ffffff;
+}
+
+.dark-mode .features-list li:nth-child(odd) {
+    background-color: #1C1F23; /* Color para los elementos en posiciones impares */
+}
+
+.dark-mode .features-list li:nth-child(even) {
+    background-color: #121519; /* Color para los elementos en posiciones pares */
+}
+
+.dark-mode .navbar-logo {
+    content: url('/assets/img/gr_white.png');
+}
