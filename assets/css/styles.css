@@ -6,8 +6,22 @@
     vertical-align: left;
 }
 
+.dark-mode .navbar-logo {
+    content: url('/assets/img-two/gp_white.png');
+}
+
 .as-logo {
     max-height: 200px;
     margin-right: 5px;
     vertical-align: left;
+}
+
+.dark-mode .as-logo {
+    content: url('/assets/img-two/as_white.png');
+}
+
+.app-name{
+    font-family: "Freckle Face", cursive;
+    font-size: 4em;
+    margin: 0;
 }
