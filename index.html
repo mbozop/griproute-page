@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="navbar-title" >GripRoute </title>
-    
+    <title>GripRoute</title>
+
+    <!-- MIS ESTILOS-->
     <link rel="stylesheet" href="./assets/css/styles.css"></link> 
 
     <!-- Theme Mode JS-->
@@ -17,6 +18,18 @@
 
     <!-- Page Loading JS -->
     <script src="./assets/js/pageLoading.js"></script>
+
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Vendor styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- icofont -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/icofont.min.css">
 
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="./assets/css/theme.min.css">
@@ -38,9 +51,13 @@
         <header class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <!-- Logo -->
-                <a class="navbar-brand pe-sm-3" href="./index.html">
+                <li class="nav-item">
+                    <img src="./assets/img-two/gr_color.PNG" alt="Layer" class="navbar-logo">
+                </li>
+                <a class="app-name navbar-brand pe-sm-3" href="./index.html">
                     GripRoute
                 </a>
+                
 
                 <!-- Button Theme Mode -->
                 <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
@@ -51,7 +68,7 @@
 
                 <!-- Button Contacto Desktop -->
                 <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex"
-                    href="mailto:ascendifysolutionschile@gmail.com">
+                    href="mailto:josingaq@uch.pe">
                     <i class="ai-mail fs-xl me-2 ms-n1"></i>
                     Contáctanos
                 </a>
@@ -66,27 +83,27 @@
                 <nav class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
                         <li class="nav-item">
-                            <img src="./assets/img/gr_color.PNG" alt="Layer" class="navbar-logo">
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link active" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#features">Características</a>
+                            <a class="nav-link" href="#sobre-mi">Características</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills">Descarga gratis</a>
+                            <a class="nav-link" href="#skills">Descarga</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Planes y precios</a>
+                            <a class="nav-link" href="#hobbies">Planes y precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portafolio">Sobre nosotros</a>
                         </li>
                     </ul>
 
                     <!-- Button Contacto Mobile -->
                     <div class="d-sm-none p-3 mt-n3">
-                        <a class="btn btn-primary w-100  mb-1" href="mailto:ascendifysolutionschile@gmail.com">
+                        <a class="btn btn-primary w-100  mb-1" href="mailto:josingaq@uch.pe">
                             <i class="ai-mail fs-xl me-2 ms-n1"></i>
-                            Contáctame
+                            Contáctanos
                         </a>
                     </div>
                 </nav>
@@ -103,7 +120,7 @@
                         <div class="parallax me-lg-n4 me-xl-n5" style="max-width: 667px;">
                             <div class="parallax-layer" data-depth="0.1"
                                 style="border-radius: 1rem 5rem; overflow: hidden;">
-                                <img src="./assets/img/IMG_8647.png" alt="Layer">
+                                <img src="./assets/img-two/IMG_8647.png" alt="Layer">
                             </div>
                         </div>
                     </div>
@@ -113,17 +130,20 @@
                         </h1>
                         <p class="fs-lg text-center text-lg-start pb-xl-2 mx-auto mx-lg-0 mb-3 mb-lg-5">
                             Más que una aplicación, GripRoute es una experiencia de escalada completa. Gestiona gimnasios, conecta escaladores y ofrece diversión para todos los niveles. 
+
                         </p>
 
                         <div class="d-flex justify-content-around justify-content-lg-start mb-3 gap-1 gap-lg-3">
                             <div class="d-flex justify-content-center justify-content-lg-start">
-                                <a class="btn btn-primary btn-lg px-3 py-2" target="_blank">
+                                <a class="btn btn-primary btn-lg px-3 py-2" target="_blank"
+                                    href="./assets/cv/Jose_Inga_Quintana_CV.pdf">
                                     Soy escalador
                                 </a>
                             </div>
                             <div class="d-flex justify-content-center justify-content-lg-start">
-                                <a class="btn btn-primary btn-lg px-3 py-2" target="_blank">
-                                    Soy un dueño
+                                <a class="btn btn-primary btn-lg px-3 py-2" target="_blank"
+                                    href="./assets/cv/Jose_Inga_Quintana_CV.pdf">
+                                    Soy dueño
                                 </a>
                             </div>
                         </div>
@@ -132,95 +152,58 @@
             </div>
         </section>
 
-        <!-- Sobre mi -->
-        <section class="bg-secondary pt-5 pb-5 mt-5 mb-5" id="features">
+        <!-- Sobre nosotros -->
+        <section class="bg-secondary pt-5 pb-5 mt-5 mb-5" id="sobre-mi">
             <div class="container pt-5 pb-5 mt-5 mb-5">
-                <div class="row">
-                    <div class="col-md-4 text-center text-md-start">
-                        <h2 class="h1">Sobre mí</h2>
-                        <p class="pb-3 pb-sm-4">Conóceme</p>
-                    </div>
-                    <div class="col-md-8 col-lg-7 offset-lg-1">
-                        <div class="accordion" id="faq">
-                            <div class="accordion-item bg-light">
-                                <h3 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#questionOne" aria-expanded="true"
-                                        aria-controls="questionOne">¿Quién soy?</button>
-                                </h3>
-                                <div class="accordion-collapse collapse show" id="questionOne"
-                                    aria-labelledby="headingOne" data-bs-parent="#faq">
-                                    <div class="accordion-body fs-sm">
-                                        Soy un estudiante de Ingeniería de Sistemas e Informática de la Universidad
-                                        de Ciencias y Humanidades de Perú, con conocimieaaas en desarrollo web y
-                                        móvil, así como en diseño de interfaces de usuario. Me gusta aprender
-                                        cosas nuevas y me considero una persona muy curiosa.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item bg-light">
-                                <h3 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#questionTwo" aria-expanded="false"
-                                        aria-controls="questionTwo">Soy una persona autodidacta</button>
-                                </h3>
-                                <div class="accordion-collapse collapse" id="questionTwo" aria-labelledby="headingTwo"
-                                    data-bs-parent="#faq">
-                                    <div class="accordion-body fs-sm">
-                                        Me gusta investigar y aprender cosas nuevas, por lo que siempre estoy
-                                        buscando nuevas formas de mejorar mis habilidades y aprender nuevas
-                                        tecnologías.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
 
-        <!-- App -->
+        <!-- Descarga -->
         <section class="container pt-5 pb-5 mt-5 mb-5" id="app">
             <h2 class="text-center section-title">¡Y es GRATIS!</h2>
             <p class="text-center section-description">Si eres escalador y quieres tener una nueva experiencia de escalada en muros de escalada, simplemente haz clic a continuación.</p>
             <div class="container-badges text-center mt-5">
                 <a class="badge badge-primary" target="_blank">
-                    <img src="assets/img/googleplay_badge-esp.png" alt="Descargar en App Store">
+                    <img src="assets/img-two/googleplay_badge-esp.png" alt="Descargar en App Store">
                 </a>
                 <a class="badge badge-primary" target="_blank">
-                    <img src="/assets/img/appstore_badge-esp.png" alt="Descargar en App Store">
+                    <img src="/assets/img-two/appstore_badge-esp.png" alt="Descargar en App Store">
                 </a>
             </div>
         </section>
-        
 
-        <!-- Plans -->
-        <section class="bg-secondary pt-5 pb-5 mt-5 mb-5" id="pricing">
-            <h2 class="section-title text-center">Planes y Precios para Usuarios</h2>
-            <p class="section-description text-center">Si bien la app es de uso gratuito para todos los escaladores, ofrecemos planes de actualización con funcionalidades adicionales para escaladores y gimnasios de escalada. </p>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 justify-content-center">
-                <!-- Item 1 -->
-                <div class="col col-md-3">
-                    <div class="card">
-                        <div class="card-flip-inner">
-                            <div class="d-flex align-items-center card-flip-front bg-secondary rounded-5">
+        <!-- Planes -->
+        <section class="bg-secondary pt-5 pb-5 mt-5 mb-5" id="sobre-mi">
+            <div class="container pt-5 pb-5 mt-5 mb-5">
+                <h2 class="section-title text-center">Planes y Precios para Usuarios</h2>
+                <p class="section-description text-center">Si bien la app es de uso gratuito para todos los escaladores, ofrecemos planes de actualización con funcionalidades adicionales para escaladores y gimnasios de escalada. </p>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 justify-content-center">
+                    <!-- Item-->
+                    <div class="col col-md-3">
+                        <div class="card">
+                            <div class="d-flex align-items-center rounded-5">
                                 <div class="card-body text-center">
-                                    <i class="ai-headphone mb-3 text-primary" style="font-size: 5rem;"></i>
-                                    <h3>Free</h3>
+                                    <h3>Gimnasios</h3>
+                                    <div class="price">
+                                        <span class="currency">$4000</span><span class="duration">/MES</span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-muted mt-5">Creado específicamente para gimnasios de escalada</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-flip-back bg-primary rounded-5">
-                                <div class="card-body text-center">
-                                    <i class="ai-music mb-5 text-white" style="font-size: 5rem;"></i>
-                                    <p class="card-text text-white opacity-70">
-                                        Me gusta escuchar música, me relaja y me ayuda a concentrarme.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                            <ul class="features-list">
+                                <li><span>🔥</span> ¡Boulders para siempre! <i class="info-icon"></i></li>
+                                <li><span>🔥</span> Secuencias <i class="info-icon"></i></li>
+                                <li>Graduación personalizada <i class="info-icon"></i></li>
+                                <li>3 plantillas <i class="info-icon"></i></li>
+                                <li>Sala privada <i class="info-icon"></i></li>
+                                <li>Control total <i class="info-icon"></i></li>
+                            </ul>
                     </div>
                 </div>
-                <!-- Item 2 -->
+                <!-- Item-->
                 <div class="col col-md-3">
                     <div class="card">
                             <div class="d-flex align-items-center rounded-5">
@@ -244,48 +227,156 @@
                             </ul>
                     </div>
                 </div>
-                <!-- Item 3 -->
+                <!-- Item-->
                 <div class="col col-md-3">
-                    <div class="card rounded-5">
-                        <div class="card-body text-center">
-                            <h3 class="plan-title">Gimnasios</h3>
-                            <div class="price">
-                                <span class="currency">$4000</span><span class="duration">/MES</span>
+                    <div class="card">
+                            <div class="d-flex align-items-center rounded-5">
+                                <div class="card-body text-center">
+                                    <h3>Gimnasios</h3>
+                                    <div class="price">
+                                        <span class="currency">$4000</span><span class="duration">/MES</span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-muted mt-5">Creado específicamente para gimnasios de escalada</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="description">
-                                <span class="text-muted mt-5">Creado específicamente para gimnasios de escalada</span>
-                            </div>                        </div>
-                        <ul class="features-list">
-                            <li><span>🔥</span> ¡Boulders para siempre! <i class="info-icon"></i></li>
-                            <li><span>🔥</span> Secuencias <i class="info-icon"></i></li>
-                            <li>Graduación personalizada <i class="info-icon"></i></li>
-                            <li>3 plantillas <i class="info-icon"></i></li>
-                            <li>Sala privada <i class="info-icon"></i></li>
-                            <li>Control total <i class="info-icon"></i></li>
-                        </ul>
+                            <ul class="features-list">
+                                <li><span>🔥</span> ¡Boulders para siempre! <i class="info-icon"></i></li>
+                                <li><span>🔥</span> Secuencias <i class="info-icon"></i></li>
+                                <li>Graduación personalizada <i class="info-icon"></i></li>
+                                <li>3 plantillas <i class="info-icon"></i></li>
+                                <li>Sala privada <i class="info-icon"></i></li>
+                                <li>Control total <i class="info-icon"></i></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="container pt-1 mt-1 pb-4 mb-4" style="margin-top: -380px;">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-start">
+                    <h2 class="h1">Sobre nosotros</h2>
+                    <img src="./assets/img-two/as_color.png" alt="Layer" class="as-logo" id="logo">
+                    <p class="pb-3 pb-sm-4">Conoce a Ascendify Solutions</p>
+                </div>
+                <div class="col-md-8 col-lg-7 offset-lg-1">
+                    <div class="accordion" id="faq">
+                        <!-- Primera Card -->
+                        <div class="accordion-item bg-light">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#questionOne" aria-expanded="true" aria-controls="questionOne">
+                                    ¿Quién somos?
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse show" id="questionOne"
+                                aria-labelledby="headingOne" data-bs-parent="#faq">
+                                <div class="accordion-body fs-sm">
+                                    Ascendify Solutions es una empresa que nace con el objetivo de ser pionera en la integración de la tecnología en la disciplina, buscando poner al servicio de los escaladores tecnologías emergentes e impactar de manera positiva en el crecimiento y desarrollo de sus capacidades.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Segunda Card -->
+                        <div class="accordion-item bg-light">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
+                                    Nuestra misión
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="questionTwo"
+                                aria-labelledby="headingTwo" data-bs-parent="#faq">
+                                <div class="accordion-body fs-sm">
+                                    Nuestra misión es integrar tecnología de punta en el mundo de la escalada. Nos
+                                    comprometemos a crear soluciones que no solo potencian el rendimiento deportivo de los
+                                    escaladores, sino que también hagan de la escalada una actividad más accesible y personalizada
+                                    para todos. Esta dedicación hacia la innovación nos guía para superar constantemente los
+                                    límites establecidos, buscando siempre formas de hacer la escalada más atractiva y alcanzable
+                                    para personas de todas las edades y habilidades.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tercera Card -->
+                        <div class="accordion-item bg-light">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
+                                    Nuestra visión
+                                </button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="questionThree"
+                                aria-labelledby="headingThree" data-bs-parent="#faq">
+                                <div class="accordion-body fs-sm">
+                                    Nuestra visión es convertirnos en el referente indiscutible de innovación en el
+                                    mundo de la escalada, conectando y enriqueciendo la comunidad global de escaladores.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
     </main>
 
     <!-- Footer-->
-    <footer class="footer py-5">
+    <footer class="footer bg-secondary py-5">
         <div class="container pt-md-2 pt-lg-3 pt-xl-4">
-            <div class="container">
-                <h2 class="text-center section-title">Contáctanos</h2>
-                <p class="text-center section-description">Para consultas sobre los planes o simplemente para felicitarnos por el excelente trabajo 😉, no dudes en contactarte con nosotros.</p>
-                <div class="text-center contact-info">
-                    <span class="contact-item" role="img" aria-label="Location">📍</span> Santiago, Chile
-                    <span class="contact-item" role="img" aria-label="Email">✉️</span> <a href="mailto:ascendifysolutionschile@gmail.com">ascendifysolutionschile@gmail.com</a>
+            <div class="row pb-4 pb-md-5 pt-sm-2 mb-lg-2">
+
+                <div class="col-md-4 col-lg-4 pb-2 pb-md-0 mb-4 mb-md-0">
+                    <a class="navbar-brand text-nav py-0 mb-3 mb-md-4" href="./index.html">
+                        <span>Contáctanos</span>
+                    </a>
+                    
+                    <div class="d-flex">
+                        <a class="btn btn-icon btn-md btn-secondary rounded-circle me-3" href="#">
+                            <i class="ai-instagram"></i>
+                        </a>
+                        <a class="btn btn-icon btn-md btn-secondary rounded-circle me-3" href="#">
+                            <i class="ai-github"></i>
+                        </a>
+                        <a class="btn btn-icon btn-md btn-secondary rounded-circle me-3" href="#">
+                            <i class="ai-mail"></i>
+                        </a>
+                    </div>
                 </div>
+
+                <div class="col-md-8 col-lg-8 col-xl-8">
+                    <div class="row">
+                        <div
+                            class="col mb-3 mb-md-0 d-flex justify-content-start justify-content-md-center justify-content-lg-center">
+                            <ul class="nav flex-column">
+                                <li><a class="nav-link fw-normal py-1 px-0" href="./index.html">Inicio</a></li>
+                                <li><a class="nav-link fw-normal py-1 px-0" href="#sobre-mi">Características</a></li>
+                                <li><a class="nav-link fw-normal py-1 px-0" href="#skills">Descarga</a></li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col mb-4 mb-md-0 d-flex justify-content-start justify-content-md-center justify-content-lg-center">
+                            <ul class="nav flex-column">
+                                <li><a class="nav-link fw-normal py-1 px-0" href="#hobbies">Planes y precios</a></li>
+                                <li><a class="nav-link fw-normal py-1 px-0" href="#portafolio">Sobre nosotros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            <p class="fs-sm mb-0">
+                <span class="opacity-70">&copy; Todos los derechos reservados. Made by </span>
+                <a class="nav-link d-inline fw-normal p-0" href="https://www.joseleonel.tk/" target="_blank"
+                    rel="noopener">
+                    Ascendify Solutions
+                </a>
+            </p>
         </div>
-        <p class="bg-secondary text-center copyright">
-            Copyright © 2024 Ascendify Solutions - Todos los derechos reservados
-        </p>
     </footer>
-    
 
     <!-- Back to top button-->
     <a class="btn-scroll-top" href="#top" data-scroll="">
