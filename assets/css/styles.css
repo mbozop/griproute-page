@@ -6,6 +6,18 @@
     vertical-align: left;
 }
 
+.as-logo{
+    max-height: 200px; /* Ajusta esta altura según sea necesario */
+    margin-right: 5px; /* Espacio a la derecha de la imagen */
+}
+
+.app-name{
+    font-family: "Freckle Face", cursive;
+    font-size: 4em;
+    color: #000000;
+    margin: 0;
+}
+
 .section-title{
     font-family: "Lexend Mega", sans-serif;
     font-size: 2.5em;
@@ -106,8 +118,8 @@
     font-family: "Questrial", sans-serif;
     background: #1c1c1c; /* Ajuste del color de fondo si es necesario */
     color: #a0a0a0;
-    padding: 10px 0;
-    margin-top: auto;
+    padding: 10px 10px 10px 10px;
+    
 }
 
 .dark-mode .section-title {
@@ -115,13 +127,13 @@
 }
 
 .dark-mode .features-list li:nth-child(odd) {
-    background-color: #1C1F23; /* Color para los elementos en posiciones impares */
+    background-color: #1C1F23;
 }
 
 .dark-mode .features-list li:nth-child(even) {
-    background-color: #121519; /* Color para los elementos en posiciones pares */
+    background-color: #121519;
 }
 
 .dark-mode .navbar-logo {
-    content: url('/assets/img/gr_white.png');
+    filter: invert(1) brightness(100);
 }
