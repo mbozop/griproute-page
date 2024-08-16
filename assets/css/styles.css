@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lexend+Mega:wght@100..900&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --primary-color: #448C74;
+    --secondary-color: #F6F9FC;
+    --dark-color: #121519;
+    --light-color: #ffffff;
+    --gray-color: #6f788b;
+
+    --questrial-font: 'Questrial', sans-serif;
+    --lexend-mega-font: 'Lexend Mega', sans-serif;
+    --freckle-face-font: 'Freckle Face', cursive;
+    --inter-font: 'Inter', sans-serif;
+
+}
+
 .navbar-logo {
     max-height: 50px;
     margin-right: 5px;
     vertical-align: left;
-}
-
-.dark-mode .navbar-logo {
-    content: url('/assets/img-two/gp_white.png');
 }
 
 .as-logo {
@@ -16,12 +26,105 @@
     vertical-align: left;
 }
 
-.dark-mode .as-logo {
-    content: url('/assets/img-two/as_white.png');
-}
-
 .app-name{
-    font-family: "Freckle Face", cursive;
+    font-family: var(--lexend-mega-font);
     font-size: 4em;
     margin: 0;
+}
+
+.section-description{
+    font-size: 1.3em;
+    margin-bottom: 60px;
+}
+
+.section-title{
+    font-family: var(--lexend-mega-font);
+    font-size: 2.5em;
+    margin: 0px 0px 60px 0px ;
+}
+
+.plan-title {
+    font-size: 1.5em;
+    font-family: var(--lexend-mega-font);
+    font-weight: bold;
+    margin: 0 10 0 0;
+}
+
+.price {
+    font-family: var(--lexend-mega-font);
+    font-size: 2.5em;
+    color: #448C74;
+}
+
+.price.currency {
+    font-size: 0.6em;
+    vertical-align: top;
+}
+
+.price .duration {
+    font-size: 0.5em;
+}
+
+.description {
+    font-family: var(--inter-font);
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #F6F9FC;
+}
+
+.features-list {
+    list-style: none;
+    font-family: var(--inter-font);
+    padding: 0;
+    margin: -10px 20px 20px 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #F6F9FC; /* Añade un borde si lo necesitas */
+}
+
+.features-list li {
+    padding: 10px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.features-list li:nth-child(odd) {
+    background-color: #F6F9FC;
+}
+
+.features-list li:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.features-list li i.info-icon {
+    font-style: normal;
+    background-color: #444;
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.dark-mode .features-list{
+    border: 2px solid #1C1F23;
+}
+
+.dark-mode .features-list li:nth-child(odd) {
+    background-color: #1C1F23;
+}
+
+.dark-mode .features-list li:nth-child(even) {
+    background-color: #121519;
+}
+
+.dark-mode .navbar-logo {
+    content: url('/assets/img-two/gp_white.png');
+}
+
+.dark-mode .as-logo {
+    content: url('/assets/img-two/as_white.png');
 }

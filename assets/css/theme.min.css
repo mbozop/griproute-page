@@ -550,6 +550,7 @@ progress {
 }
 
 .display-3 {
+    font-family: "Lexend Mega", sans-serif; 
     font-size: calc(1.525rem + 3.3vw);
     font-weight: 600;
     line-height: 1.3
@@ -4925,7 +4926,7 @@ fieldset:disabled .btn {
     --ar-accordion-btn-icon-width: calc(var(--ar-body-font-size) * 0.75);
     --ar-accordion-btn-icon-transform: rotate(-180deg);
     --ar-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-    --ar-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='var%28--ar-primary%29'%3e%3cpath d='M.5 6.3c.6-.6 1.6-.6 2.3 0l9.3 9.3 9.3-9.3c.6-.6 1.6-.6 2.3 0 .6.6.6 1.6 0 2.3L13.3 18.8c-.6.6-1.6.6-2.3 0L.8 8.5c-.9-.8-.9-1.6-.3-2.2z'/%3e%3c/svg%3e");
+    --ar-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FFFFFF'%3e%3cpath d='M.5 6.3c.6-.6 1.6-.6 2.3 0l9.3 9.3 9.3-9.3c.6-.6 1.6-.6 2.3 0 .6.6.6 1.6 0 2.3L13.3 18.8c-.6.6-1.6.6-2.3 0L.8 8.5c-.9-.8-.9-1.6-.3-2.2z'/%3e%3c/svg%3e");
     --ar-accordion-btn-focus-border-color: var(--ar-gray-700);
     --ar-accordion-btn-focus-box-shadow: unset;
     --ar-accordion-body-padding-x: 1.5rem;
@@ -14791,6 +14792,7 @@ button:focus {
 .ai-mail:before {
     content: ""
 }
+
 
 .ai-map-pin:before {
     content: ""
