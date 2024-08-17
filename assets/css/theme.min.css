@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --ar-blue: #0d6efd;
     --ar-indigo: #6610f2;
     --ar-purple: #6f42c1;
@@ -550,6 +550,7 @@ progress {
 }
 
 .display-3 {
+    font-family: "Lexend Mega", sans-serif; 
     font-size: calc(1.525rem + 3.3vw);
     font-weight: 600;
     line-height: 1.3
@@ -4925,13 +4926,18 @@ fieldset:disabled .btn {
     --ar-accordion-btn-icon-width: calc(var(--ar-body-font-size) * 0.75);
     --ar-accordion-btn-icon-transform: rotate(-180deg);
     --ar-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-    --ar-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='var%28--ar-primary%29'%3e%3cpath d='M.5 6.3c.6-.6 1.6-.6 2.3 0l9.3 9.3 9.3-9.3c.6-.6 1.6-.6 2.3 0 .6.6.6 1.6 0 2.3L13.3 18.8c-.6.6-1.6.6-2.3 0L.8 8.5c-.9-.8-.9-1.6-.3-2.2z'/%3e%3c/svg%3e");
+    --ar-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23434a57'%3e%3cpath d='M.5 6.3c.6-.6 1.6-.6 2.3 0l9.3 9.3 9.3-9.3c.6-.6 1.6-.6 2.3 0 .6.6.6 1.6 0 2.3L13.3 18.8c-.6.6-1.6.6-2.3 0L.8 8.5c-.9-.8-.9-1.6-.3-2.2z'/%3e%3c/svg%3e");
     --ar-accordion-btn-focus-border-color: var(--ar-gray-700);
     --ar-accordion-btn-focus-box-shadow: unset;
     --ar-accordion-body-padding-x: 1.5rem;
     --ar-accordion-body-padding-y: 1.5rem;
     --ar-accordion-active-color: var(--ar-primary);
     --ar-accordion-active-bg: transparent
+}
+
+.dark-mode .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FFFFFF'%3e%3cpath d='M.5 6.3c.6-.6 1.6-.6 2.3 0l9.3 9.3 9.3-9.3c.6-.6 1.6-.6 2.3 0 .6.6.6 1.6 0 2.3L13.3 18.8c-.6.6-1.6.6-2.3 0L.8 8.5c-.9-.8-.9-1.6-.3-2.2z'/%3e%3c/svg%3e");
+    transform: var(--ar-accordion-btn-icon-transform)
 }
 
 .accordion-button {
@@ -14150,6 +14156,18 @@ button:focus {
     content: ""
 }
 
+.ai-arrow-up-left:before {
+    content: ""
+}
+
+.ai-arrow-up-right:before {
+    content: ""
+}
+
+.ai-arrow-up:before {
+    content: ""
+}
+
 .ai-at:before {
     content: ""
 }
@@ -14664,6 +14682,10 @@ button:focus {
     content: ""
 }
 
+.ai-headphone:before {
+    content: ""
+}
+
 .ai-heart-filled:before {
     content: ""
 }
@@ -14776,6 +14798,7 @@ button:focus {
     content: ""
 }
 
+
 .ai-map-pin:before {
     content: ""
 }
@@ -14834,6 +14857,10 @@ button:focus {
 
 .ai-monitor:before {
     content: ""
+}
+
+.ai-moon:before {
+    content: ""
 }
 
 .ai-movie:before {
@@ -15112,7 +15139,11 @@ button:focus {
     content: ""
 }
 
-ai-table-column:before {
+.ai-sun:before {
+    content: ""
+}
+
+.ai-table-column:before {
     content: ""
 }
 
@@ -17107,6 +17138,9 @@ hr.dropdown-divider {
 }
 
 .nav-item {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
     margin-bottom: 0
 }
 

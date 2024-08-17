@@ -1,65 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lexend+Mega:wght@100..900&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --primary-color: #448C74;
+    --secondary-color: #F6F9FC;
+    --dark-color: #121519;
+    --light-color: #ffffff;
+    --gray-color: #6f788b;
+
+    --questrial-font: 'Questrial', sans-serif;
+    --lexend-mega-font: 'Lexend Mega', sans-serif;
+    --freckle-face-font: 'Freckle Face', cursive;
+    --inter-font: 'Inter', sans-serif;
+
+}
+
 .navbar-logo {
-    max-height: 50px; /* Ajusta esta altura según sea necesario */
-    margin-right: 5px; /* Espacio a la derecha de la imagen */
+    max-height: 50px;
+    margin-right: 5px;
     vertical-align: left;
 }
 
-.as-logo{
-    max-height: 200px; /* Ajusta esta altura según sea necesario */
-    margin-right: 5px; /* Espacio a la derecha de la imagen */
+.as-logo {
+    max-height: 200px;
+    margin-right: 5px;
+    vertical-align: left;
 }
 
 .app-name{
-    font-family: "Freckle Face", cursive;
-    font-size: 4em;
-    color: #000000;
-    margin: 0;
-}
-
-.section-title{
-    font-family: "Lexend Mega", sans-serif;
-    font-size: 2.5em;
-    color: #000000;
-    text-align: center;
-    margin: 60px 20px 60px 20px ;
+    font-family: var(--freckle-face-font);
+    font-size: 6em;
+    margin-left: 8px;
 }
 
 .section-description{
-    font-family: "Questrial", sans-serif;
-    font-size: 1.5em;
-    color: #898A8C;
-    text-align: center;
-    margin: 0px 100px 60px 100px;
+    font-size: 1.3em;
+    margin-bottom: 60px;
 }
 
-.pricing-card {
-    background-color: #2C2A48;
-    border-radius: 15px;
-    color: white;
-    padding: 20px;
-    max-width: 300px;
-    margin: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.card-header {
-    background-color: #00D9A5;
-    border-radius: 15px 15px 0 0;
-    padding: 20px;
-    color: #2C2A48;
+.section-title{
+    font-family: var(--lexend-mega-font);
+    font-size: 2.5em;
+    margin: 0px 0px 60px 0px ;
 }
 
 .plan-title {
     font-size: 1.5em;
-    font-family: "Lexend Mega", sans-serif;
+    font-family: var(--lexend-mega-font);
     font-weight: bold;
     margin: 0 10 0 0;
 }
 
 .price {
-    font-family: "lexend mega", sans-serif;
+    font-family: var(--lexend-mega-font);
     font-size: 2.5em;
     color: #448C74;
 }
@@ -74,17 +66,20 @@
 }
 
 .description {
-    font-family: "Questrial", sans-serif;
+    font-family: var(--inter-font);
     margin-top: 10px;
     font-size: 1.2em;
+    color: #F6F9FC;
 }
 
 .features-list {
     list-style: none;
-    font-family: questrial, sans-serif;
-    border-radius: 10px;
+    font-family: var(--inter-font);
     padding: 0;
-    margin: 20px;
+    margin: -10px 20px 20px 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #F6F9FC; /* Añade un borde si lo necesitas */
 }
 
 .features-list li {
@@ -93,37 +88,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 15px; /* Agrega border-radius aquí */
+    overflow: hidden;
 }
 
 .features-list li:nth-child(odd) {
-    background-color: #F6F9FC; /* Color para los elementos en posiciones impares */
+    background-color: #F6F9FC;
 }
 
 .features-list li:nth-child(even) {
-    background-color: #ffffff; /* Color para los elementos en posiciones pares */
+    background-color: #ffffff;
 }
 
 .features-list li i.info-icon {
-    font-style: normal; /* Esto es solo un marcador de posición, agrega el ícono de tu elección */
-    background-color: #444;
-    border-radius: 50%;
-    padding: 5px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
+    font-style: normal;
+    font-size: 1em;
 }
 
-.copyright {
-    font-family: "Questrial", sans-serif;
-    background: #1c1c1c; /* Ajuste del color de fondo si es necesario */
-    color: #a0a0a0;
-    padding: 10px 10px 10px 10px;
-    
-}
 
-.dark-mode .section-title {
-    color: #ffffff;
+
+.dark-mode .features-list{
+    border: 2px solid #1C1F23;
 }
 
 .dark-mode .features-list li:nth-child(odd) {
@@ -135,5 +119,9 @@
 }
 
 .dark-mode .navbar-logo {
-    filter: invert(1) brightness(100);
+    content: url('/assets/img-two/gp_white.png');
+}
+
+.dark-mode .as-logo {
+    content: url('/assets/img-two/as_white.png');
 }
